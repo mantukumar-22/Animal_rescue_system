@@ -3,7 +3,6 @@ const app = require('./src/app.js');
 require('dotenv').config();
 const port = process.env.PORT;
 const connectDB = require('./src/config/db.js')
-// connectDB();
 
 app.get('/', (req, res) => {
     res.send('Animal Rescue application is running')
